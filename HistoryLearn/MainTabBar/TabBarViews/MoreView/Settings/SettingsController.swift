@@ -1,29 +1,41 @@
+////
+////  SettingsController.swift
+////  HistoryLearn
+////
+////  Created by A LINA on 25/4/24.
+////
 //
-//  SettingsController.swift
-//  HistoryLearn
 //
-//  Created by A LINA on 28/4/24.
+//import UIKit
 //
-
-import UIKit
-
-class SettingsController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+//protocol SettingControllerProtocol: AnyObject {
+//    func onDeleteNotes()
+//    func onSuccesDelete()
+//    func onFailureDelete()
+//}
+//
+//class SettingController {
+//    
+//    var view: settingViewProtocol?
+//    var model: settingModelProtocol?
+//    
+//    init(view: settingViewProtocol) {
+//        self.view = view
+//        self.model = SettingModel(controller: self)
+//    }
+//    
+//}
+//
+//extension SettingController: SettingControllerProtocol {
+//    func onSuccesDelete() {
+//        view?.succesDelete()
+//    }
+//    
+//    func onFailureDelete() {
+//        view?.failureDelete()
+//    }
+//    
+//    func onDeleteNotes() {
+//        model?.deleteNotes()
+//    }
+//}

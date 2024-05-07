@@ -1,29 +1,27 @@
+//import UIKit
 //
-//  SettingsModel.swift
-//  HistoryLearn
+//protocol settingModelProtocol {
+//    func deleteNotes()
+//}
 //
-//  Created by A LINA on 28/4/24.
+//class SettingModel {
+//    
+//    weak var controller: SettingControllerProtocol?
+//    private let coreDataservice = CoreDataService.shared
+//    init(controller: SettingControllerProtocol) {
+//        self.controller = controller
+//    }
+//    
+//}
 //
-
-import UIKit
-
-class SettingsModel: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+//extension SettingModel: settingModelProtocol {
+//    func deleteNotes() {
+//        coreDataservice.deleteNotes { response in
+//            if response == .success {
+//                self.controller?.onSuccesDelete()
+//            } else {
+//                self.controller?.onFailureDelete()
+//            }
+//        }
+//    }
+//}

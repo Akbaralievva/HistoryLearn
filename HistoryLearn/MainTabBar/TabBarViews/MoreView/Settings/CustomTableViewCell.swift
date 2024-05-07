@@ -1,23 +1,34 @@
+////
+////  CustomTableViewCell.swift
+////  HistoryLearn
+////
+////  Created by A LINA on 28/4/24.
+////
 //
-//  CustomTableViewCell.swift
-//  HistoryLearn
+//import UIKit
 //
-//  Created by A LINA on 28/4/24.
+//protocol settingModelProtocol {
+//    func deleteNotes()
+//}
 //
-
-import UIKit
-
-class CustomTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
-}
+//class SettingModel {
+//    
+//    weak var controller: SettingControllerProtocol?
+//    private let coreDataservice = CoreDataService.shared
+//    init(controller: SettingControllerProtocol) {
+//        self.controller = controller
+//    }
+//    
+//}
+//
+//extension SettingModel: settingModelProtocol {
+//    func deleteNotes() {
+//        coreDataservice.deleteNotes { response in
+//            if response == .success {
+//                self.controller?.onSuccesDelete()
+//            } else {
+//                self.controller?.onFailureDelete()
+//            }
+//        }
+//    }
+//}

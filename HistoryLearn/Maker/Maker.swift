@@ -11,34 +11,94 @@ class MakerView {
     
     static let shared = MakerView()
     
-    func makeButton(title: String = "",
-                    titleColor: UIColor = .white,
-                    fontSize: CGFloat = 14,
-                    isBold: Bool = false,
-                    for state: UIControl.State = .normal,
-                    colorBT: UIColor = .blue,
-                    backgroundColorBT: UIColor? = nil,
-                    layerCornerBT: CGFloat = 16) -> UIButton {
-        let bt = UIButton(type: .system)
-        bt.setTitle(title, for: state)
+    func makeLabel(text: String = "",
+                   size: CGFloat = 15,
+                   weight: UIFont.Weight = .regular,
+                   textColor: UIColor = .black,
+                   backgroundColor: UIColor = .clear,
+                   borderWidth: CGFloat = 0,
+                   cornerRadius: CGFloat = 18,
+                   borderColor: UIColor = .lightGray,
+                   textAlignment: NSTextAlignment = .left,
+                   numberOfLines: Int = 0,
+                   lineBreakMode: NSLineBreakMode = .byWordWrapping,
+                   translateAutoresizingMaskIntoConstraints: Bool = false
+    ) -> UILabel {
+        let label = UILabel()
+        label.text = text
+        label.font = .systemFont(ofSize: size, weight: weight)
+        label.textColor = textColor
+        label.backgroundColor = backgroundColor
+        label.layer.borderWidth = borderWidth
+        label.layer.cornerRadius = cornerRadius
+        label.layer.borderColor = borderColor.cgColor
+        label.textAlignment = textAlignment
+        label.numberOfLines = numberOfLines
+        label.lineBreakMode = lineBreakMode
+        label.translatesAutoresizingMaskIntoConstraints = translateAutoresizingMaskIntoConstraints
+        return label
+    }
+    
+    
+    func makeTextField(text: String = "",
+                       placeholder: String? = nil,
+                       size: CGFloat = 15,
+                       weight: UIFont.Weight = .regular,
+                       textColor: UIColor = .black,
+                       backgroundColor: UIColor = .clear,
+                       cornerRadius: CGFloat = 10,
+                       textAlignment: NSTextAlignment = .left,
+                       borderWidth: CGFloat = 1,
+                       borderColor: UIColor = .white,
+                       borderStyle: UITextField.BorderStyle = .none,
+                       isSecureTextEntry: Bool = false,
+                       isEnabled:Bool = true,
+                       translateAutoresizingMaskIntoConstraints: Bool = false
+    ) -> UITextField {
+        let textField = UITextField()
+        textField.text = text
+        textField.placeholder = placeholder
+        textField.font = .systemFont(ofSize: size, weight: weight)
+        textField.textColor = textColor
+        textField.backgroundColor = backgroundColor
+        textField.layer.cornerRadius = cornerRadius
+        textField.textAlignment = textAlignment
+        textField.layer.borderWidth = borderWidth
+        textField.layer.borderColor = borderColor.cgColor
+        textField.borderStyle = borderStyle
+        textField.isSecureTextEntry = isSecureTextEntry
+        textField.isEnabled = isEnabled
+        textField.translatesAutoresizingMaskIntoConstraints = translateAutoresizingMaskIntoConstraints
+        return textField
+    }
+    
+    
+    
+    func makeButton(title: String,
+                    titleColor: UIColor,
+                    titleFont: UIFont,
+                    backgroundColor: UIColor? = nil,
+                    cornerRadius: CGFloat,
+                    borderWidth: CGFloat,
+                    isEnable: Bool,
+                    translatesAutoresizingMaskIntoConstraints: Bool) -> UIButton {
+        let button = UIButton()
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(titleColor, for: .normal)
+        button.titleLabel?.font = titleFont
+        button.layer.cornerRadius = cornerRadius
+        button.layer.borderWidth = borderWidth
+        button.isEnabled = isEnable
+        button.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
         
-        var titleFont: UIFont
-        if isBold {
-            titleFont = UIFont.boldSystemFont(ofSize: fontSize)
-        } else {
-            titleFont = UIFont.systemFont(ofSize: fontSize)
+        if let bgColor = backgroundColor {
+            button.backgroundColor = bgColor
         }
         
-        bt.titleLabel?.font = titleFont
-        bt.setTitleColor(titleColor, for: state)
-        bt.tintColor = colorBT
-        bt.backgroundColor = backgroundColorBT
-        bt.layer.cornerRadius = layerCornerBT
-        bt.translatesAutoresizingMaskIntoConstraints = false
-        return bt
+        return button
     }
-
-
+    
+    
     
     func makeImage(image: String? = nil) -> UIImageView {
         let img = UIImageView()
@@ -58,18 +118,7 @@ class MakerView {
         return view
     }
     
-    func makeLbl(text: String = "",
-                   textColor: UIColor = .black,
-                   textSize: CGFloat = 14, ofSize: UIFont.Weight = .light,
-                 numberOfLines: Int = 0) -> UILabel {
-        let label = UILabel()
-        label.text = text
-        label.textColor = textColor
-        label.font = .systemFont(ofSize: textSize, weight: ofSize)
-        label.numberOfLines = numberOfLines
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }
+    
     
     func makerStack(axis: NSLayoutConstraint.Axis = .vertical,
                     spacing: CGFloat = 1,
@@ -93,29 +142,6 @@ class MakerView {
         return stc
     }
     
-    func makeTF(placeholder: String = "Напишите что то",
-                keyboardType: UIKeyboardType = .default,
-                leftViewMode: UITextField.ViewMode = .always,
-                cornerRadius: CGFloat = 16,
-                borderColor: CGColor = UIColor.black.cgColor,
-                borderWidth: CGFloat = 1,
-                backgroundColor: UIColor = .white,
-                alignment: NSTextAlignment? = nil) -> UITextField {
-        let tf = UITextField()
-        tf.placeholder = placeholder
-        tf.keyboardType = keyboardType
-        tf.backgroundColor = backgroundColor
-        if let alignment = alignment {
-            tf.textAlignment = alignment
-        }
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 5))
-        tf.leftView = view
-        tf.leftViewMode = leftViewMode
-        tf.layer.cornerRadius = cornerRadius
-        tf.layer.borderColor = borderColor
-        tf.layer.borderWidth = borderWidth
-        tf.translatesAutoresizingMaskIntoConstraints = false
-        return tf
-    }
-
+    
+    
 }
