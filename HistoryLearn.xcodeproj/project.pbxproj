@@ -10,13 +10,18 @@
 		CF77682F2BDA12CE00BEA6A8 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77682E2BDA12CE00BEA6A8 /* SignUpView.swift */; };
 		CF7768312BDAC39300BEA6A8 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7768302BDAC39300BEA6A8 /* MainTabBarView.swift */; };
 		CF7768332BDAC3D600BEA6A8 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7768322BDAC3D600BEA6A8 /* MoreView.swift */; };
-		CF7768392BDAC49B00BEA6A8 /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7768382BDAC49B00BEA6A8 /* TestsView.swift */; };
 		CF77683D2BDACF4E00BEA6A8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77683C2BDACF4E00BEA6A8 /* HomeView.swift */; };
 		CFBBF4F72BDD946E005234ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBF4F62BDD946E005234ED /* SettingsView.swift */; };
 		CFBBF4FA2BDD963E005234ED /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBF4F92BDD963E005234ED /* SettingsController.swift */; };
 		CFBBF4FC2BDD9673005234ED /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBF4FB2BDD9673005234ED /* SettingsModel.swift */; };
 		CFBBF4FE2BDD96D3005234ED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBF4FD2BDD96D3005234ED /* CustomTableViewCell.swift */; };
-		CFBF088C2BE6BF4A00995C36 /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF088B2BE6BF4A00995C36 /* LessonView.swift */; };
+		CFBF088E2BEC031A00995C36 /* LessonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF088D2BEC031A00995C36 /* LessonsView.swift */; };
+		CFBF08902BEC040700995C36 /* ThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF088F2BEC040700995C36 /* ThemeTableViewCell.swift */; };
+		CFBF08922BF0B88300995C36 /* TasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF08912BF0B88300995C36 /* TasksTableViewCell.swift */; };
+		CFBF08942BF0B90500995C36 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF08932BF0B90500995C36 /* TasksView.swift */; };
+		CFBF08B72BF1039800995C36 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF08B62BF1039700995C36 /* Questions.swift */; };
+		CFBF08BE2BF1134000995C36 /* Task1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF08BD2BF1134000995C36 /* Task1.swift */; };
+		CFBF08C12BF11C2F00995C36 /* Task2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBF08C02BF11C2F00995C36 /* Task2.swift */; };
 		CFC1CF4B2BD10F5E00CF3C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1CF4A2BD10F5E00CF3C5C /* AppDelegate.swift */; };
 		CFC1CF4D2BD10F5E00CF3C5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1CF4C2BD10F5E00CF3C5C /* SceneDelegate.swift */; };
 		CFC1CF4F2BD10F5E00CF3C5C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1CF4E2BD10F5E00CF3C5C /* RegistrationView.swift */; };
@@ -30,13 +35,18 @@
 		CF77682E2BDA12CE00BEA6A8 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CF7768302BDAC39300BEA6A8 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		CF7768322BDAC3D600BEA6A8 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
-		CF7768382BDAC49B00BEA6A8 /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
 		CF77683C2BDACF4E00BEA6A8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CFBBF4F62BDD946E005234ED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CFBBF4F92BDD963E005234ED /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		CFBBF4FB2BDD9673005234ED /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		CFBBF4FD2BDD96D3005234ED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		CFBF088B2BE6BF4A00995C36 /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		CFBF088D2BEC031A00995C36 /* LessonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsView.swift; sourceTree = "<group>"; };
+		CFBF088F2BEC040700995C36 /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTableViewCell.swift; sourceTree = "<group>"; };
+		CFBF08912BF0B88300995C36 /* TasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewCell.swift; sourceTree = "<group>"; };
+		CFBF08932BF0B90500995C36 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		CFBF08B62BF1039700995C36 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		CFBF08BD2BF1134000995C36 /* Task1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task1.swift; sourceTree = "<group>"; };
+		CFBF08C02BF11C2F00995C36 /* Task2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task2.swift; sourceTree = "<group>"; };
 		CFC1CF472BD10F5E00CF3C5C /* HistoryLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HistoryLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC1CF4A2BD10F5E00CF3C5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC1CF4C2BD10F5E00CF3C5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				CF77683C2BDACF4E00BEA6A8 /* HomeView.swift */,
-				CF7768382BDAC49B00BEA6A8 /* TestsView.swift */,
-				CFBF088B2BE6BF4A00995C36 /* LessonView.swift */,
+				CFBF088D2BEC031A00995C36 /* LessonsView.swift */,
+				CFBF08952BF0BB2800995C36 /* Tasks */,
 				CFBBF4F32BDD7CE1005234ED /* MoreView */,
 			);
 			path = TabBarViews;
@@ -82,6 +92,8 @@
 		CFB29C442BE6B4750076751B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				CFBF088F2BEC040700995C36 /* ThemeTableViewCell.swift */,
+				CFBF08912BF0B88300995C36 /* TasksTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -104,6 +116,24 @@
 				CFBBF4FD2BDD96D3005234ED /* CustomTableViewCell.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		CFBF08952BF0BB2800995C36 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF08932BF0B90500995C36 /* TasksView.swift */,
+				CFBF08BF2BF1134800995C36 /* Tests */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		CFBF08BF2BF1134800995C36 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CFBF08BD2BF1134000995C36 /* Task1.swift */,
+				CFBF08C02BF11C2F00995C36 /* Task2.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		CFC1CF3E2BD10F5E00CF3C5C = {
@@ -151,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC1CF5E2BD1145F00CF3C5C /* Topics.swift */,
+				CFBF08B62BF1039700995C36 /* Questions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,17 +274,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC1CF4F2BD10F5E00CF3C5C /* RegistrationView.swift in Sources */,
+				CFBF08942BF0B90500995C36 /* TasksView.swift in Sources */,
 				CFBBF4FA2BDD963E005234ED /* SettingsController.swift in Sources */,
 				CF7768332BDAC3D600BEA6A8 /* MoreView.swift in Sources */,
 				CFC1CF4B2BD10F5E00CF3C5C /* AppDelegate.swift in Sources */,
 				CF7768312BDAC39300BEA6A8 /* MainTabBarView.swift in Sources */,
-				CF7768392BDAC49B00BEA6A8 /* TestsView.swift in Sources */,
+				CFBF08922BF0B88300995C36 /* TasksTableViewCell.swift in Sources */,
 				CFBBF4FE2BDD96D3005234ED /* CustomTableViewCell.swift in Sources */,
+				CFBF088E2BEC031A00995C36 /* LessonsView.swift in Sources */,
+				CFBF08B72BF1039800995C36 /* Questions.swift in Sources */,
 				CFC1CF612BD114AE00CF3C5C /* Maker.swift in Sources */,
+				CFBF08902BEC040700995C36 /* ThemeTableViewCell.swift in Sources */,
 				CFC1CF4D2BD10F5E00CF3C5C /* SceneDelegate.swift in Sources */,
 				CF77682F2BDA12CE00BEA6A8 /* SignUpView.swift in Sources */,
-				CFBF088C2BE6BF4A00995C36 /* LessonView.swift in Sources */,
 				CFBBF4F72BDD946E005234ED /* SettingsView.swift in Sources */,
+				CFBF08C12BF11C2F00995C36 /* Task2.swift in Sources */,
+				CFBF08BE2BF1134000995C36 /* Task1.swift in Sources */,
 				CF77683D2BDACF4E00BEA6A8 /* HomeView.swift in Sources */,
 				CFBBF4FC2BDD9673005234ED /* SettingsModel.swift in Sources */,
 				CFC1CF5F2BD1145F00CF3C5C /* Topics.swift in Sources */,

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "065C5422-A428-4A7A-88F7-9591A23ED0CD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46FC77C8-37D2-4B4E-9C11-834916A38210"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HistoryLearn/RegistrationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "RegistrationView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "46FC77C8-37D2-4B4E-9C11-834916A38210 - 472a3dfd397b756d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.passwordLbl.getter : __C.UILabel"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "150">
+               </Location>
+               <Location
+                  uuid = "46FC77C8-37D2-4B4E-9C11-834916A38210 - b476254f130ff53f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in HistoryLearn.RegistrationView.passwordLbl.getter : __C.UILabel"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "46FC77C8-37D2-4B4E-9C11-834916A38210 - a4ea0c4d4d605961"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.passwordLbl.setter : __C.UILabel"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "46FC77C8-37D2-4B4E-9C11-834916A38210 - bd905953ebd4c92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.passwordLbl.modify : __C.UILabel"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "46FC77C8-37D2-4B4E-9C11-834916A38210 - 35beea57796f155"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.passwordLbl.modify : __C.UILabel with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBB5AEFF-1148-46E5-AFC0-BA49239B55ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HistoryLearn/RegistrationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "numaraTF"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02CF6C1C-8435-4A35-AC5E-8EFA2C4C57C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HistoryLearn/RegistrationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "numaraTF"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE283590-A2C3-474C-ABBD-806695DCE5E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HistoryLearn/RegistrationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "numaraTF"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36016844-47A9-42A6-8937-B13A685EEFCA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HistoryLearn/RegistrationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "RegistrationView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "36016844-47A9-42A6-8937-B13A685EEFCA - 13362b48224f9658"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.numaraTF.getter : __C.UITextField"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "150">
+               </Location>
+               <Location
+                  uuid = "36016844-47A9-42A6-8937-B13A685EEFCA - b58ff188e4f695cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UITextField in HistoryLearn.RegistrationView.numaraTF.getter : __C.UITextField"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "36016844-47A9-42A6-8937-B13A685EEFCA - 914b2487122ca22c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.numaraTF.setter : __C.UITextField"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "36016844-47A9-42A6-8937-B13A685EEFCA - b51f9ce804cbdb5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.numaraTF.modify : __C.UITextField"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/HistoryLearn/RegistrationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "36016844-47A9-42A6-8937-B13A685EEFCA - 5fed410b975691bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HistoryLearn.RegistrationView.numaraTF.modify : __C.UITextField with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HistoryLearn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Staj/HistoryLearn/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct Topic {
     var text: String
     var image: String

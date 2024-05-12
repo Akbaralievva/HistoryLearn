@@ -90,6 +90,23 @@ class TasksView: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            let vc = First_Quiz()
+            navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = Second_Quiz()
+            navigationController?.pushViewController(vc, animated: true)
+        
+        default:
+            break
+        }
+    }
+
+
+
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }

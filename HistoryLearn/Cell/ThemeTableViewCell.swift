@@ -4,20 +4,60 @@
 //
 //  Created by A LINA on 9/5/24.
 //
-
 import UIKit
 
 class ThemeTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    let themeLabel = UILabel()
+    let actionButton = UIButton(type: .system)
+    
+    var buttonAction: (() -> Void)?
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        
+        themeLabel.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(themeLabel)
+        NSLayoutConstraint.activate([
+            themeLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            themeLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+        ])
+        
+        
+        if #available(iOS 13.0, *) {
+            actionButton.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        } else {
+            
+            actionButton.setTitle(">", for: .normal)
+        }
+        
+        actionButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(actionButton)
+        NSLayoutConstraint.activate([
+            actionButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            actionButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+        ])
+    
+    
+     backgroundColor = .white
+    layer.cornerRadius = 10
+    layer.borderWidth = 1
+    layer.borderColor = UIColor.lightGray.cgColor
+    layer.shadowColor = UIColor.black.cgColor
+    layer.shadowOpacity = 0.5
+    layer.shadowOffset = CGSize(width: 0, height: 2)
+    layer.shadowRadius = 2
+    
+    
+}
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @objc func buttonTapped() {
+        buttonAction?()
     }
-
 }

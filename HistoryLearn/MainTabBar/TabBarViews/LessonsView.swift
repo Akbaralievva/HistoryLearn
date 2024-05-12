@@ -4,86 +4,92 @@
 //
 //  Created by A LINA on 9/5/24.
 //
-
 import UIKit
 
 class LessonsView: UITableViewController {
-
+    
+    private lazy var titleLbl: UILabel = {
+        let label = UILabel()
+        label.text = "LESSONS"
+        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let themes = [
+        "Ата Мекен тарыхын окутууга киришүү",
+        "Орто кылымдагы кыргыз мамлекетинин \nтүзүлүшү жана өнүгүшү (VI-XIII кк.)",
+        "Кыргызстандын Россия империясынын \nкурамына каратылышы (XIX к.экинчи \nжарымы)",
+        "КЫРГЫЗСТАНДА СОВЕТ БИЙЛИГИ.\n 1917-1939 ЖЫЛДАРДА.",
+        "КЫРГЫЗСТАН 1941--1990 ЖЖ.",
+        "КЫРГЫЗСТАН 1991-2005 ЖЖ.",
+        "КЫРГЫЗСТАН 2005-2013-ЖЖ"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        tableView.register(ThemeTableViewCell.self, forCellReuseIdentifier: "themeCell")
+        tableView.backgroundColor = UIColor.groupTableViewBackground
+        tableView.separatorColor = UIColor.lightGray
+        
+        setUpUI()
     }
-
-    // MARK: - Table view data source
-
+    
+    private func setUpUI() {
+        // Устанавливаем заголовок таблицы как кастомное представление
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 50))
+        headerView.addSubview(titleLbl)
+        NSLayoutConstraint.activate([
+            titleLbl.topAnchor.constraint(equalTo: headerView.topAnchor),
+            titleLbl.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
+            titleLbl.heightAnchor.constraint(equalToConstant: 50)
+        ])
+        tableView.tableHeaderView = headerView
+        
+        // Добавляем изображение как кнопку над таббаром
+        let imageView = UIImageView(image: UIImage(named: "manas"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        imageView.addGestureRecognizer(tapGesture)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            imageView.widthAnchor.constraint(equalToConstant: 30),
+            imageView.heightAnchor.constraint(equalToConstant: 30)
+        ])
+    }
+    
+    @objc func imageTapped() {
+        // Обработка нажатия на изображение
+        print("Image tapped")
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return themes.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "themeCell", for: indexPath) as! ThemeTableViewCell
+        
+        cell.themeLabel.text = themes[indexPath.row]
+        cell.themeLabel.numberOfLines = 0
+        cell.buttonAction = {
+            print("Next button tapped")
+        }
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
